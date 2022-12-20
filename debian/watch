@@ -1,0 +1,8 @@
+version=3
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)\d*$//,\
+uversionmangle=s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha|b|a)[\-\.]?\d*)$/$1~$2/;s/RC/rc/;s/_/./g,\
+filenamemangle=s/(?:.*?)?(?:rel|r|v|libharu|RELEASE)?[\-\_]?(\d\S+)\.(tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))/libharu-$1.$2/;s/_/./g,\
+repacksuffix=+dfsg \
+https://github.com/libharu/libharu/tags \
+(?:.*?/)?(?:rel|r|v|libharu|RELEASE)?[\-\_]?(\d\S+)\.(?:tgz|tbz2|txz|tar\.(?:gz|bz2|xz))

@@ -1,0 +1,113 @@
+libharu (2.3.0+dfsg-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:59:24 +0800
+
+libharu (2.3.0+dfsg-1) unstable; urgency=medium
+
+  * Move from experimental to unstable
+
+ -- Johan Van de Wauw <johan@gisky.be>  Wed, 27 Dec 2017 17:16:45 +0100
+
+libharu (2.3.0+dfsg-1~exp4) experimental; urgency=medium
+
+  * Remove whitespaces at end of line in control file
+  * Bump standards version - no changes required
+  * Update my mail address
+
+ -- Johan Van de Wauw <johan@gisky.be>  Wed, 06 Dec 2017 20:16:59 +0100
+
+libharu (2.3.0+dfsg-1~exp3) experimental; urgency=medium
+
+  * Team upload.
+  * Update watch file to handle common issues.
+  * Restructure control file with cme.
+  * Update Vcs-Git URL to use HTTPS.
+  * Update copyright file, changes:
+    - Add Source field
+    - Update Format URL to use HTTPS.
+    - Add license & copyright for hpdf_encrypt.{c,h} & t4.h
+    - Add Sergey Konovalov & Koen Deforche to copyright holders
+  * Use #PACKAGE# marker instead of hardcoded package name in symbols file.
+  * Add upstream metadata.
+  * Add DEP3 headers to fix-version.diff.
+  * Enable parallel builds.
+  * Bump Standards-Version to 3.9.8, no changes.
+  * Add lintian override for hardening-no-fortify-functions.
+  * Enable all hardening buildflags.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 05 Nov 2016 19:03:43 +0100
+
+libharu (2.3.0+dfsg-1~exp2) experimental; urgency=medium
+
+  * Update license in debian/copyright after FTP-master comments
+
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Thu, 24 Sep 2015 20:52:13 +0200
+
+libharu (2.3.0+dfsg-1~exp1) experimental; urgency=medium
+
+  * Imported Upstream version 2.3.0+dfsg(Closes: #726069)
+  * Bump standards version (no changes needed)
+  * Bump library package number
+  * Update install filename
+  * Switch to debhelper 9 - enable multiarch
+  * Remove unneccessary patches
+  * Revert "Update copyright/rules file, no dfsg cleaning needed anymore"
+  * Update rules to new upstream tarball format
+  * Add info on how to build dfsg-free version
+  * Make sure autoconf is used (as was in previous packages)
+  * Use Files-excluded to repack original tarball
+  * Fix version dependency in control file
+  * Fix scm urls
+  * Add symbols
+  * Add gbp.conf
+  * Fix rebuild
+  * Remove symbols of old library
+  * Update copyright year
+  * Fix package description (Closes: #753246)
+  * Add multi-arch to control file
+  * Move explanation of dfsg cleaning to copyright
+  * Remove get-orig-source from d/rules
+  * Fix d/copyright version
+
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Thu, 20 Aug 2015 13:30:16 +0200
+
+libharu (2.2.1-2) unstable; urgency=low
+
+  [ Johan Van de Wauw ]
+  * Bump standards version
+  * Fix copyright file formatting
+  * Support huge fonts (Closes: #726069)
+  * Autoreconf to support recent architectures(Closes: #727409)
+
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Sun, 27 Oct 2013 18:07:05 +0100
+
+libharu (2.2.1-1) unstable; urgency=low
+
+  * update to upstream 2.2.1
+  * Set priority to optional instead of extra (Closes: #631332)
+  * Remove unneeded patches (part of libharu 2.2.0 and above)
+  * Import some upstream bugfixes
+  * Update copyright/rules file, no dfsg cleaning needed anymore
+  * Update package name to reflect soname change
+  * Remove libtool-helper (*.la) and static library (*.a) from -dev package
+  * Update copyright file to DEP-5 format 
+
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Tue, 30 Aug 2011 18:39:57 -0400
+
+libharu (2.1.0+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #581397)
+  * Delete unused windows build files
+  * Delete non-free pngsuite from demos
+  * Remove other copy of pngsuite
+  * Remove demo pdf files
+  * Remove font from demo (already in debian)
+  * Remove font Penguinattack, already packaged
+  * Delete unneeded autom4te cache files
+  * Update example to work with font in debian
+  * Initial import debian/* files
+  * Update autotools
+
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Fri, 16 Jul 2010 20:35:57 +0200

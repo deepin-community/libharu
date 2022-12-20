@@ -1,0 +1,14 @@
+Description: Fix version.
+Author: Johan Van de Wauw <johan.vandewauw@gmail.com>
+
+--- a/include/hpdf_version.h
++++ b/include/hpdf_version.h
+@@ -3,6 +3,6 @@
+ #define HPDF_MAJOR_VERSION 2
+ #define HPDF_MINOR_VERSION 3
+ #define HPDF_BUGFIX_VERSION 0
+-#define HPDF_EXTRA_VERSION "RC2"
+-#define HPDF_VERSION_TEXT "2.3.0RC2"
++#define HPDF_EXTRA_VERSION ""
++#define HPDF_VERSION_TEXT "2.3.0"
+ #define HPDF_VERSION_ID 20300
